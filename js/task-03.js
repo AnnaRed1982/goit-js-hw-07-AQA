@@ -15,12 +15,12 @@ const images = [
 
 const gallerySelector = document.querySelector(".gallery");
 
+gallerySelector.style.listStyle = 'none';
 gallerySelector.style.backgroundColor = "teal";
 gallerySelector.style.display = "flex";
-gallerySelector.style.flexDirection = "row";
-gallerySelector.style.alignItems = "center";
-gallerySelector.style.justifyContent = "center";
+gallerySelector.style.flexDirection = "column";
 gallerySelector.style.gap = "10px";
+
 
 const markup = images
   .map(
